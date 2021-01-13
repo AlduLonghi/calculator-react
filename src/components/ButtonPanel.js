@@ -1,37 +1,33 @@
 import Button from './Button';
 
-const ButtonPanel = () => (
-  <div>
+const ButtonPanel = () => {
+  const buttonNames = [
+    ['AC', '+/-', '%', '÷'],
+    ['7', '8', '9', 'X'],
+    ['4', '5', '6', '-'],
+    ['1', '2', '3', '+'],
+    ['.', '0', '='],
+  ];
+  return (
     <div>
-      <Button name="AC" />
-      <Button name="+/-" />
-      <Button name="%" />
-      <Button name="÷" />
+      <div>
+        {buttonNames[0].map(btnName => <Button name={btnName} key={`btn-${btnName}`} />) }
+      </div>
+      <div>
+        {buttonNames[1].map(btnName => <Button name={btnName} key={`btn-${btnName}`} />) }
+      </div>
+      <div>
+        {buttonNames[2].map(btnName => <Button name={btnName} key={`btn-${btnName}`} />) }
+      </div>
+      <div>
+        {buttonNames[3].map(btnName => <Button name={btnName} key={`btn-${btnName}`} />) }
+      </div>
+      <div>
+        {buttonNames[4].map(btnName => <Button name={btnName} key={`btn-${btnName}`} />) }
+      </div>
     </div>
-    <div>
-      <Button name="7" />
-      <Button name="8" />
-      <Button name="9" />
-      <Button name="X" />
-    </div>
-    <div>
-      <Button name="4" />
-      <Button name="5" />
-      <Button name="6" />
-      <Button name="-" />
-    </div>
-    <div>
-      <Button name="1" />
-      <Button name="2" />
-      <Button name="3" />
-      <Button name="+" />
-    </div>
-    <div>
-      <Button name="0" />
-      <Button name="." />
-      <Button name="=" />
-    </div>
-  </div>
-);
+
+  );
+};
 
 export default ButtonPanel;
