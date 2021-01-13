@@ -1,13 +1,11 @@
-import './App.css';
+import Display from './Display';
+import ButtonPanel from './ButtonPanel';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>This is a calculator!</h1>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <>
+    <Display />
+    <ButtonPanel />
+  </>
+);
 
 export default App;
