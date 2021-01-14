@@ -13,7 +13,7 @@ const calculate = (dataObj, btnName) => {
   } else if (btnName === '+' || btnName === '-' || btnName === 'X' || btnName === '÷' || btnName === '%') {
     newData.operation = newData.total !== '' ? btnName : newData.operation;
   } else if (btnName === '=') {
-    newData.total = operate(Number(newData.total), Number(newData.next), newData.operation);
+    newData.total = operate(newData.total * 1, newData.next * 1, newData.operation);
     newData.next = '';
     newData.operation = '';
   } else if (newData.operation === '') {
