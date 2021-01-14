@@ -9,14 +9,14 @@ const calculate = (dataObj, btnName) => {
   } else if (btnName === 'AC') {
     newData.total = '';
     newData.next = '';
-    newData.operation = null;
+    newData.operation = '';
   } else if (btnName === '+' || btnName === '-' || btnName === 'X' || btnName === '÷' || btnName === '%') {
-    newData.operation = newData.total !== '' ? btnName : null;
+    newData.operation = newData.total !== '' ? btnName : '';
   } else if (btnName === '=') {
     newData.total = operate(Number(newData.total), Number(newData.next), newData.operation);
     newData.next = '';
-    newData.operation = null;
-  } else if (newData.operation == null) {
+    newData.operation = '';
+  } else if (newData.operation === '') {
     newData.total += btnName;
   } else {
     newData.next += btnName;

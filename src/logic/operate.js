@@ -1,23 +1,21 @@
-import Big from 'big.js';
-
 const operate = (num1, num2, operation) => {
   let result;
 
   switch (operation) {
     case '+':
-      result = Big(num1) + Big(num2);
+      result = num1 + num2;
       break;
     case '-':
-      result = Big(num1) - Big(num2);
+      result = num1 - num2;
       break;
     case 'X':
-      result = Big(num1) * Big(num2);
+      result = num1 * num2;
       break;
     case '÷':
-      result = Big(num1) / Big(num2);
+      result = num1 / num2;
       break;
     case '%':
-      result = (Big(num1) * Big(num2)) / 100;
+      result = (num1 * num2) / 100;
       break;
     default:
       result = '';

@@ -13,7 +13,7 @@ class App extends React.Component {
       calculation: {
         total: '',
         next: '',
-        operation: 'null',
+        operation: '',
       },
     };
   }
@@ -25,9 +25,10 @@ class App extends React.Component {
   }
 
   render() {
+    const { calculation } = this.state;
     return (
       <>
-        <Display />
+        <Display data={calculation} />
         <ButtonPanel onClick={this.handleEvent} />
       </>
     );
