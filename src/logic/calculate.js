@@ -5,13 +5,13 @@ const calculate = (dataObj, btnName) => {
 
   if (btnName === '+/-') {
     newData.total = (newData.total * -1).toString();
-    newData.next = (newData.next * -1).toString();
+    newData.next = newData.next.length >= 1 ? (newData.next * -1).toString() : newData.next;
   } else if (btnName === 'AC') {
     newData.total = '';
     newData.next = '';
     newData.operation = '';
   } else if (btnName === '+' || btnName === '-' || btnName === 'X' || btnName === '÷' || btnName === '%') {
-    newData.operation = newData.total !== '' ? btnName : '';
+    newData.operation = newData.total !== '' ? btnName : newData.operation;
   } else if (btnName === '=') {
     newData.total = operate(Number(newData.total), Number(newData.next), newData.operation);
     newData.next = '';
