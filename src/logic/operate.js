@@ -22,7 +22,7 @@ const operate = (num1, num2, operation) => {
       break;
   }
 
-  return result.toString();
+  return result.toFixed(2).toString();
 };
 
 export default operate;

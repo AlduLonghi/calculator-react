@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Button from './Button';
+import '../style/App.css';
 
 const ButtonPanel = props => {
   const buttonNames = [
@@ -11,19 +12,19 @@ const ButtonPanel = props => {
   ];
   return (
     <div>
-      <div>
+      <div className="button-row">
         {buttonNames[0].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
       </div>
-      <div>
+      <div className="button-row">
         {buttonNames[1].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
       </div>
-      <div>
+      <div className="button-row">
         {buttonNames[2].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
       </div>
-      <div>
+      <div className="button-row">
         {buttonNames[3].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
       </div>
-      <div>
+      <div className="button-row">
         {buttonNames[4].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
       </div>
     </div>

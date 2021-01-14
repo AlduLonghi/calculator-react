@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import '../style/App.css';
 
 const Button = ({ name, onClick }) => (
-  <button type="button" onClick={() => onClick(name)}>
+  <button type="button" onClick={() => onClick(name)} className="button">
     {name}
   </button>
 );
