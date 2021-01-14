@@ -7,18 +7,28 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
+    this.handleEvent = this.handleEvent.bind(this);
+
     this.state = {
-      total: '',
-      next: '',
-      operation: 'null',
+      calculation: {
+        total: '',
+        next: '',
+        operation: 'null',
+      },
     };
+  }
+
+  handleEvent(btnName) {
+    this.setState(prevState => ({
+      calculation: calculate(prevState.calculation, btnName),
+    }));
   }
 
   render() {
     return (
       <>
         <Display />
-        <ButtonPanel onClick={calculate} />
+        <ButtonPanel onClick={this.handleEvent} />
       </>
     );
   }
