@@ -10,8 +10,11 @@ const calculate = (dataObj, btnName) => {
     newData.total = '';
     newData.next = '';
     newData.operation = '';
-  } else if (btnName === '+' || btnName === '-' || btnName === 'X' || btnName === '÷' || btnName === '%') {
+  } else if (btnName === '+' || btnName === '-' || btnName === 'X' || btnName === '÷') {
     newData.operation = newData.total !== '' ? btnName : newData.operation;
+  } else if (btnName === '%') {
+    newData.total /= 100;
+    newData.next /= 100;
   } else if (btnName === '=') {
     newData.total = operate(newData.total * 1, newData.next * 1, newData.operation);
     newData.next = '';

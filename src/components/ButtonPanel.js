@@ -13,7 +13,7 @@ const ButtonPanel = props => {
   return (
     <div>
       <div className="button-row">
-        {buttonNames[0].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
+        {buttonNames[0].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} className="button button-spc" />) }
       </div>
       <div className="button-row">
         {buttonNames[1].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
@@ -25,7 +25,7 @@ const ButtonPanel = props => {
         {buttonNames[3].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
       </div>
       <div className="button-row">
-        {buttonNames[4].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
+        {buttonNames[4].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} className={btnName === '=' ? 'button button-equal' : 'button'} />) }
       </div>
     </div>
 

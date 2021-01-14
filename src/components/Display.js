@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import '../style/App.css';
 
 const Display = ({ data }) => (
-  <div>
+  <div className="display">
     <p>{`${data.total} ${data.operation} ${data.next}`}</p>
   </div>
 );
