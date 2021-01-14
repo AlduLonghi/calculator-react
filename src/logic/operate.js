@@ -17,6 +17,9 @@ const operate = (num1, num2, operation) => {
     case '%':
       result = (num1 * num2) / 100;
       break;
+    default:
+      result = '';
+      break;
   }
 
   return result.toString();
