@@ -13,7 +13,7 @@ const calculate = (dataObj, btnName) => {
   } else if (btnName === '+' || btnName === '-' || btnName === 'X' || btnName === '÷' || btnName === '%') {
     newData.operation = newData.total !== '' ? btnName : null;
   } else if (btnName === '=') {
-    newData.total = operate(parseInt(newData.total), parseInt(newData.next), newData.operation);
+    newData.total = operate(Number(newData.total), Number(newData.next), newData.operation);
     newData.next = '';
     newData.operation = null;
   } else if (newData.operation == null) {
@@ -21,7 +21,7 @@ const calculate = (dataObj, btnName) => {
   } else {
     newData.next += btnName;
   }
-  
+
   return newData;
 };
 
