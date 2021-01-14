@@ -11,19 +11,19 @@ const ButtonPanel = () => {
   return (
     <div>
       <div>
-        {buttonNames[0].map(btnName => <Button name={btnName} key={`btn-${btnName}`} />) }
+        {buttonNames[0].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={this.onClick} />) }
       </div>
       <div>
-        {buttonNames[1].map(btnName => <Button name={btnName} key={`btn-${btnName}`} />) }
+        {buttonNames[1].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={this.onClick} />) }
       </div>
       <div>
-        {buttonNames[2].map(btnName => <Button name={btnName} key={`btn-${btnName}`} />) }
+        {buttonNames[2].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={this.onClick} />) }
       </div>
       <div>
-        {buttonNames[3].map(btnName => <Button name={btnName} key={`btn-${btnName}`} />) }
+        {buttonNames[3].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={this.onClick} />) }
       </div>
       <div>
-        {buttonNames[4].map(btnName => <Button name={btnName} key={`btn-${btnName}`} />) }
+        {buttonNames[4].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={this.onClick} />) }
       </div>
     </div>
 
