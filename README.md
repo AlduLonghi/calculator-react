@@ -4,9 +4,7 @@
 
 > This project consists of building a calculator using React with the objetive of mastering the basic concepts of the framework as well as getting used to its setup and functionalities.
 
-![screenshot](./app_screenshot.png)
-
-Additional description about the project and its features.
+<img src="./src/assets/screenshot.png" width="600" height="400">
 
 ## Built With
 
@@ -16,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://awsome-react-calculator.herokuapp.com/)
 
 
 ## Getting Started
@@ -31,7 +29,6 @@ To get a local copy up and running follow these simple example steps.
 
 - Finally, run `npm start` to start the app.
 
-- 
 ## Authors
 
 👤 **Author1**
