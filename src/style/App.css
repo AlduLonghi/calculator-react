@@ -116,3 +116,15 @@ h2 {
 .home-text {
   font-size: 1.5rem;
 }
+
+.quote-container {
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  padding-top: 10rem;
+  font-size: 1.5rem;
+}
+
+.quote-container p {
+  margin-top: 1rem;
+}

@@ -1,8 +1,9 @@
 import { Route, Switch } from 'react-router-dom';
-import Calculator from './calculator/Calculator';
-import Home from './home/Home';
 import '../style/App.css';
 import Navbar from './shared/Navbar';
+import Calculator from './calculator/Calculator';
+import Home from './home/Home';
+import Quote from './quote/Quote';
 
 const App = () => (
   <>
@@ -11,6 +12,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/calculator" component={Calculator} />
+        <Route path="/quote" component={Quote} />
       </Switch>
     </div>
   </>
