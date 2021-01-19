@@ -1,29 +1,15 @@
-import { useState } from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
-import calculate from '../../logic/calculate';
+import CalculatorBody from './CalculatorBody';
 import '../../style/App.css';
-import Navbar from '../shared/Navbar';
+import calculatorImg from '../../assets/calculator.svg';
 
-const Calculator = () => {
-  const [state, setState] = useState({ total: '', next: '', operation: '' });
-  const { total } = state;
-  const { next } = state;
-  const { operation } = state;
-
-  const handleClick = btnName => {
-    setState(prevState => ({ ...calculate(prevState, btnName) }));
-  };
-
-  return (
-    <>
-      <Navbar />
-      <div className="calculator-body">
-        <Display data={{ total, next, operation }} />
-        <ButtonPanel onClick={handleClick} />
-      </div>
-    </>
-  );
-};
+const Calculator = () => (
+  <div className="calculator-component">
+    <div className="calc-text-img">
+      <h2>Let&apos;s do some math!</h2>
+      <img src={calculatorImg} alt="calculator" />
+    </div>
+    <CalculatorBody />
+  </div>
+);
 
 export default Calculator;

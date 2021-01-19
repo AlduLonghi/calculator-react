@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 import '../../style/App.css';
 
 const Navbar = () => (
-  <div>
+  <nav>
     <h1>
-      Math magicians
+      Math Magicians
     </h1>
-    <div>
+    <div className="nav-links">
       <Link to="/">Home</Link>
       <Link to="/calculator">Calculator</Link>
       <Link to="/quote">Quote</Link>
     </div>
-  </div>
+  </nav>
 );
 
 export default Navbar;
