@@ -12,19 +12,19 @@ const ButtonPanel = props => {
   ];
   return (
     <div>
-      <div className="button-row">
+      <div className="button-row d-flex">
         {buttonNames[0].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} className="button button-spc" />) }
       </div>
-      <div className="button-row">
+      <div className="button-row d-flex">
         {buttonNames[1].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
       </div>
-      <div className="button-row">
+      <div className="button-row d-flex">
         {buttonNames[2].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
       </div>
-      <div className="button-row">
+      <div className="button-row d-flex">
         {buttonNames[3].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} />) }
       </div>
-      <div className="button-row">
+      <div className="button-row d-flex">
         {buttonNames[4].map(btnName => <Button name={btnName} key={`btn-${btnName}`} onClick={props.onClick} className={btnName === '=' ? 'button button-equal' : 'button'} />) }
       </div>
     </div>

@@ -4,6 +4,7 @@ import Navbar from './shared/Navbar';
 import Calculator from './calculator/Calculator';
 import Home from './home/Home';
 import Quote from './quote/Quote';
+import Footer from './shared/Footer';
 
 const App = () => (
   <>
@@ -15,6 +16,7 @@ const App = () => (
         <Route path="/quote" component={Quote} />
       </Switch>
     </div>
+    <Footer />
   </>
 );
 

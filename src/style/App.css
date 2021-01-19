@@ -1,14 +1,19 @@
+.d-flex {
+  display: flex;
+}
+
 #root {
+  flex-direction: column;
   width: 70%;
   padding: 0;
+  height: 100vh;
 }
 
 nav {
   height: 5rem;
-  background-color: #EC717A;
+  background-color: #ec717a;
   color: white;
   font-weight: bold;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1rem;
@@ -21,7 +26,6 @@ h1 {
 
 .nav-links {
   width: 25%;
-  display: flex;
   justify-content: space-around;
   color: white;
 }
@@ -44,7 +48,6 @@ h1 {
 
 .button-row {
   width: 100%;
-  display: flex;
   justify-content: space-between;
   height: 5rem;
   margin-bottom: 0.5rem;
@@ -74,7 +77,6 @@ h1 {
 }
 
 .display {
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 5rem;
@@ -87,7 +89,6 @@ h1 {
 }
 
 .calculator-component {
-  display: flex;
   justify-content: space-around;
 }
 
@@ -96,13 +97,16 @@ h3 {
   padding-bottom: 4rem;
 }
 
-img {
+footer img {
+  width: 3.7rem;
+}
+
+.calc-text-img img {
   width: 10rem;
   height: 10rem;
 }
 
 .calc-text-img {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -119,7 +123,6 @@ h2 {
 
 .quote-container {
   height: 40rem;
-  display: flex;
   justify-content: center;
   padding-top: 10rem;
   font-size: 1.5rem;
@@ -127,4 +130,12 @@ h2 {
 
 .quote-container p {
   margin-top: 1rem;
+}
+
+footer {
+  height: 5rem;
+  margin-top: auto;
+  background-color: #ec717a;
+  justify-content: center;
+  align-items: center;
 }

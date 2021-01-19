@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import '../../style/App.css';
 
 const Display = ({ data }) => (
-  <div className="display">
+  <div className="display d-flex">
     <p>{`${data.total} ${data.operation} ${data.next}`}</p>
   </div>
 );
