@@ -7,6 +7,7 @@
   width: 70%;
   padding: 0;
   height: 100vh;
+  background-color: #fff;
 }
 
 nav {
@@ -124,8 +125,8 @@ h2 {
 .quote-container {
   height: 40rem;
   justify-content: center;
-  padding-top: 10rem;
   font-size: 1.5rem;
+  padding: 10rem 3rem 0;
 }
 
 .quote-container p {
