@@ -1,14 +1,16 @@
-export const Navbar = () => {
-    return(
-        <div>
-            <h1>
-                Math magicians
-            </h1>
-            <div>
-                <link to='/'>Home</link>
-                <link to='/calculator'>Calculator</link>
-                <link to='/quote'>Quote</link>
-            </div>
-        </div>
-    )
-}
+import { Link } from 'react-router-dom';
+
+const Navbar = () => (
+  <div>
+    <h1>
+      Math magicians
+    </h1>
+    <div>
+      <Link to="/">Home</Link>
+      <Link to="/calculator">Calculator</Link>
+      <Link to="/quote">Quote</Link>
+    </div>
+  </div>
+);
+
+export default Navbar;

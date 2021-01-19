@@ -1,25 +1,11 @@
-import { useState } from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
-import calculate from '../logic/calculate';
+import { Route, Switch } from 'react-router-dom';
+import Calculator from './Calculator';
 import '../style/App.css';
 
-const App = () => {
-  const [state, setState] = useState({ total: '', next: '', operation: '' });
-  const { total } = state;
-  const { next } = state;
-  const { operation } = state;
-
-  const handleClick = btnName => {
-    setState(prevState => ({ ...calculate(prevState, btnName) }));
-  };
-
-  return (
-    <div className="calculator-body">
-      <Display data={{ total, next, operation }} />
-      <ButtonPanel onClick={handleClick} />
-    </div>
-  );
-};
+const App = () => (
+  <Switch>
+    <Route path="/" component={Calculator} />
+  </Switch>
+);
 
 export default App;
