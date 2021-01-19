@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Button from './Button';
-import '../style/App.css';
+import '../../style/App.css';
 
 const ButtonPanel = props => {
   const buttonNames = [

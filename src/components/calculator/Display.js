@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../style/App.css';
+import '../../style/App.css';
 
 const Display = ({ data }) => (
   <div className="display">
