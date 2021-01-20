@@ -1,25 +1,16 @@
-import { useState } from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
-import calculate from '../logic/calculate';
 import '../style/App.css';
+import Navbar from './shared/Navbar';
+import Footer from './shared/Footer';
+import Routes from '../Routes';
 
-const App = () => {
-  const [state, setState] = useState({ total: '', next: '', operation: '' });
-  const { total } = state;
-  const { next } = state;
-  const { operation } = state;
-
-  const handleClick = btnName => {
-    setState(prevState => ({ ...calculate(prevState, btnName) }));
-  };
-
-  return (
-    <div className="calculator-body">
-      <Display data={{ total, next, operation }} />
-      <ButtonPanel onClick={handleClick} />
+const App = () => (
+  <>
+    <Navbar />
+    <div className="page-container">
+      <Routes />
     </div>
-  );
-};
+    <Footer />
+  </>
+);
 
 export default App;

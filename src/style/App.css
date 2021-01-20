@@ -1,23 +1,61 @@
-.calculator-body {
+.d-flex {
+  display: flex;
+}
+
+#root {
+  flex-direction: column;
+  width: 70%;
+  padding: 0;
+  height: 100vh;
+  background-color: #fff;
+}
+
+nav {
+  height: 5rem;
+  background-color: #ec717a;
+  color: white;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.nav-links {
   width: 25%;
+  justify-content: space-around;
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.page-container {
+  padding: 0 3rem;
+}
+
+.calculator-body {
+  width: 35%;
   background-color: #2f383a;
-  padding-top: 5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-bottom: 2rem;
+  padding: 3rem 2rem 2rem 2rem;
   border-radius: 15px;
 }
 
 .button-row {
   width: 100%;
-  display: flex;
   justify-content: space-between;
-  height: 6rem;
+  height: 5rem;
   margin-bottom: 0.5rem;
 }
 
 .button {
-  width: 7rem;
+  width: 5rem;
   color: white;
   background-color: #57585a;
   border: none;
@@ -40,7 +78,6 @@
 }
 
 .display {
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   height: 5rem;
@@ -52,9 +89,54 @@
   padding: 0 10px;
 }
 
-#root {
-  height: 100vh;
-  display: flex;
+.calculator-component {
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 3rem;
+  padding-bottom: 4rem;
+}
+
+footer img {
+  width: 3.7rem;
+}
+
+.calc-text-img img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.calc-text-img {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.home-text {
+  font-size: 1.5rem;
+}
+
+.quote-container {
+  height: 40rem;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding: 10rem 3rem 0;
+}
+
+.quote-container p {
+  margin-top: 1rem;
+}
+
+footer {
+  height: 5rem;
+  margin-top: auto;
+  background-color: #ec717a;
   justify-content: center;
   align-items: center;
 }
