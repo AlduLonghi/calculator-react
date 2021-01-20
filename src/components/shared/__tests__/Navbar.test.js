@@ -4,12 +4,12 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Navbar from '../Navbar';
 
 it('Snapshot test for Navbar component', () => {
-    const tree = renderer
+  const tree = renderer
     .create(
-        <Router>
-            <Navbar />
-        </Router>
+      <Router>
+        <Navbar />
+      </Router>,
     )
     .toJSON();
   expect(tree).toMatchSnapshot();
-})
+});

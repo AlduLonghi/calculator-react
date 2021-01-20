@@ -3,8 +3,8 @@ import renderer from 'react-test-renderer';
 import Quote from '../Quote';
 
 it('Snapshot test for Quote component', () => {
-    const tree = renderer
+  const tree = renderer
     .create(<Quote />)
     .toJSON();
   expect(tree).toMatchSnapshot();
-})
+});
