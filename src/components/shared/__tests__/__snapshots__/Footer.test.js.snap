@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot test for Footer component 1`] = `
+<footer
+  className="d-flex"
+>
+  <img
+    alt="logo"
+    src="m.svg"
+  />
+</footer>
+`;
